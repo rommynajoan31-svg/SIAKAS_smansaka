@@ -1,0 +1,6 @@
+{
+  "name": "SIAKAS - Administrasi Kesiswaan SMA Negeri 1 Kakas",
+  "description": "Sistem Informasi Administrasi Wakil Kepala Sekolah Bidang Kesiswaan SMA Negeri 1 Kakas (NPSN: 40100895, Minahasa, Sulawesi Utara) untuk pengelolaan program kerja tahunan, kalender kegiatan, MPLS, OSIS, ekstrakurikuler, pembinaan karakter, prestasi siswa, generator dokumen resmi berbasis AI, arsip digital, dan pelaporan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

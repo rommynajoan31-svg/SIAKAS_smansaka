@@ -1,0 +1,741 @@
+# MASTER PROMPT PEMBUATAN APLIKASI ADMINISTRASI WAKIL KEPALA SEKOLAH BIDANG KESISWAAN SMA NEGERI 1 KAKAS
+
+## A. PERAN DAN TUGAS AI
+
+Bertindaklah sebagai senior full-stack developer, software architect, UI/UX designer, ahli administrasi pendidikan SMA di Indonesia, ahli tata naskah dinas, dan ahli manajemen kesiswaan berdasarkan kebijakan pendidikan Indonesia yang berlaku.
+
+Bangun sebuah aplikasi web profesional bernama:
+
+**SIAKAS — SISTEM INFORMASI ADMINISTRASI KESISWAAN SMA NEGERI 1 KAKAS**
+
+Aplikasi ini digunakan oleh Wakil Kepala Sekolah Bidang Kesiswaan SMA Negeri 1 Kakas, Kecamatan Kakas, Kabupaten Minahasa, Provinsi Sulawesi Utara.
+
+Tujuan utama aplikasi adalah mengintegrasikan seluruh administrasi, perencanaan, pelaksanaan, evaluasi, pelaporan, dan pengarsipan kegiatan kesiswaan untuk setiap tahun pelajaran yang berjalan.
+
+Jangan hanya membuat desain atau mockup. Bangun aplikasi yang benar-benar interaktif, memiliki navigasi berfungsi, formulir yang dapat disimpan, data yang dapat dikelola, generator dokumen, fitur pencarian, serta fasilitas ekspor dan pencetakan.
+
+## B. IDENTITAS DAN KONFIGURASI SEKOLAH
+
+Buat menu Pengaturan Sekolah yang memungkinkan pengguna mengelola informasi berikut:
+
+- Nama sekolah: SMA Negeri 1 Kakas.
+- NPSN: 40100895.
+- Alamat: Kecamatan Kakas, Kabupaten Minahasa, Provinsi Sulawesi Utara.
+- Nama kepala sekolah.
+- Nama Wakil Kepala Sekolah Bidang Kesiswaan.
+- Nama bendahara atau penanggung jawab kegiatan apabila diperlukan.
+- Logo sekolah.
+- Logo atau lambang pendidikan yang relevan.
+- Alamat sekolah, nomor telepon, email, dan identitas tambahan.
+- Tahun pelajaran aktif.
+- Semester ganjil atau genap.
+- Format nomor surat dan kode klasifikasi arsip.
+- Format tanda tangan, nama pejabat, dan NIP jika tersedia.
+
+Seluruh data identitas harus dapat diubah melalui pengaturan. Jangan mengarang nama pejabat, NIP, alamat terperinci, atau informasi resmi lain yang belum diisi pengguna.
+
+## C. DASHBOARD UTAMA
+
+Buat dashboard modern dengan tampilan profesional, responsif, dan mudah digunakan.
+
+Dashboard menampilkan:
+
+1. Tahun pelajaran aktif.
+2. Semester aktif.
+3. Jumlah program kerja kesiswaan.
+4. Jumlah kegiatan yang direncanakan.
+5. Jumlah kegiatan yang sedang berlangsung.
+6. Jumlah kegiatan yang telah selesai.
+7. Jumlah dokumen yang telah dibuat.
+8. Jumlah dokumen yang masih perlu dilengkapi.
+9. Agenda kegiatan terdekat.
+10. Tenggat laporan kegiatan.
+11. Status kelengkapan administrasi setiap program.
+12. Ringkasan evaluasi program kesiswaan.
+
+Sediakan grafik kegiatan berdasarkan bulan, jenis program, status pelaksanaan, dan realisasi program kerja.
+
+Tampilkan notifikasi untuk dokumen yang belum selesai, laporan yang belum diunggah, agenda yang mendekat, dan program yang belum dievaluasi.
+
+Semua angka dan grafik harus berasal dari data aplikasi, bukan angka contoh yang statis.
+
+## D. MODUL MANAJEMEN TAHUN PELAJARAN
+
+Buat fitur pengelolaan data berdasarkan tahun pelajaran.
+
+Contoh:
+- 2026/2027
+- 2027/2028
+- 2028/2029
+
+Pengguna dapat:
+- Membuat tahun pelajaran baru.
+- Menentukan semester aktif.
+- Menyalin struktur program kerja dari tahun sebelumnya.
+- Menyalin templat dokumen dari tahun sebelumnya.
+- Mengedit program yang disalin sebelum digunakan.
+- Mengarsipkan tahun pelajaran yang telah selesai.
+- Membuka kembali arsip tahun sebelumnya sesuai hak akses.
+- Membandingkan rencana dan realisasi antar-tahun.
+- Menghasilkan laporan akhir tahun pelajaran.
+
+Setiap dokumen wajib terhubung dengan tahun pelajaran dan, jika relevan, semester, program, kegiatan, serta penanggung jawabnya.
+
+Jangan mencampur data antar-tahun pelajaran. Data tahun sebelumnya harus tetap tersimpan ketika pengguna memulai tahun pelajaran baru.
+
+## E. MODUL PROGRAM KERJA WAKIL KEPALA SEKOLAH BIDANG KESISWAAN
+
+Sediakan generator Program Kerja Tahunan Wakil Kepala Sekolah Bidang Kesiswaan yang mencakup:
+
+1. Halaman judul.
+2. Lembar pengesahan.
+3. Kata pengantar.
+4. Daftar isi.
+5. Pendahuluan.
+6. Latar belakang.
+7. Landasan hukum yang relevan dan masih berlaku.
+8. Tujuan program.
+9. Sasaran program.
+10. Analisis kondisi dan kebutuhan kesiswaan.
+11. Prioritas program.
+12. Rencana kegiatan tahunan.
+13. Jadwal pelaksanaan.
+14. Penanggung jawab dan tim pelaksana.
+15. Kebutuhan anggaran jika diperlukan.
+16. Indikator keberhasilan.
+17. Target dan bukti ketercapaian.
+18. Monitoring dan evaluasi.
+19. Format tindak lanjut.
+20. Penutup dan lampiran.
+
+Sediakan tabel program kerja dengan kolom:
+
+- Nomor.
+- Bidang atau jenis program.
+- Nama kegiatan.
+- Tujuan.
+- Sasaran.
+- Indikator keberhasilan.
+- Target.
+- Waktu pelaksanaan.
+- Penanggung jawab.
+- Sumber dana.
+- Rencana anggaran.
+- Realisasi.
+- Status pelaksanaan.
+- Bukti fisik atau digital.
+- Catatan evaluasi.
+
+Program harus dapat ditambah, diubah, dihapus dengan konfirmasi, dicetak, dan diekspor.
+
+Sediakan pilihan penyusunan program berdasarkan kebutuhan sekolah, evaluasi tahun sebelumnya, prioritas kepala sekolah, kondisi peserta didik, dan kebijakan pendidikan yang berlaku.
+
+## F. MODUL DOKUMEN ADMINISTRASI KESISWAAN
+
+Buat pusat dokumen dengan kategori berikut.
+
+### 1. Dokumen perencanaan
+
+- Program Kerja Wakil Kepala Sekolah Bidang Kesiswaan.
+- Rencana Kerja Tahunan Bidang Kesiswaan.
+- Kalender kegiatan kesiswaan.
+- Matriks program dan indikator keberhasilan.
+- Rencana anggaran kegiatan.
+- Rencana monitoring dan evaluasi.
+- Rencana pembinaan peserta didik.
+- Rencana pengembangan organisasi siswa.
+- Rencana kegiatan ekstrakurikuler.
+- Rencana penguatan karakter dan budaya positif.
+
+### 2. Dokumen surat keputusan dan penugasan
+
+- SK panitia MPLS.
+- SK pembina OSIS.
+- SK pengurus OSIS.
+- SK pembina ekstrakurikuler.
+- SK pengurus ekstrakurikuler apabila diperlukan.
+- SK tim pelaksana kegiatan.
+- SK panitia lomba dan kegiatan sekolah.
+- Surat tugas guru dan tenaga kependidikan.
+- Surat keputusan atau penugasan lain sesuai kebutuhan sekolah.
+
+Setiap dokumen harus memiliki nomor, tanggal, perihal, dasar pertimbangan, dasar hukum, diktum, masa berlaku jika relevan, serta pengesahan pejabat yang berwenang.
+
+Sediakan validasi agar pengguna dapat memeriksa konsistensi nomor, tanggal, nama pejabat, dan tahun pelajaran.
+
+### 3. Dokumen persuratan
+
+- Surat undangan.
+- Surat pemberitahuan kepada orang tua/wali.
+- Surat permohonan izin kegiatan.
+- Surat permohonan narasumber.
+- Surat tugas pendamping peserta didik.
+- Surat rekomendasi keikutsertaan lomba.
+- Surat izin mengikuti kegiatan di luar sekolah.
+- Surat pemanggilan orang tua/wali.
+- Surat edaran kegiatan sekolah.
+- Surat keterangan terkait kegiatan kesiswaan sesuai kewenangan sekolah.
+- Surat balasan dan surat pengantar.
+- Surat lainnya berdasarkan templat yang dapat diedit.
+
+### 4. Dokumen pelaksanaan kegiatan
+
+- Proposal kegiatan.
+- Kerangka Acuan Kerja (KAK/TOR).
+- Jadwal kegiatan.
+- Susunan panitia.
+- Pembagian tugas panitia.
+- Daftar peserta.
+- Daftar hadir.
+- Daftar hadir panitia.
+- Undangan peserta.
+- Notulen rapat.
+- Berita acara.
+- Tata tertib kegiatan.
+- Instrumen monitoring.
+- Instrumen evaluasi.
+- Dokumentasi kegiatan.
+- Laporan pelaksanaan.
+- Laporan pertanggungjawaban.
+- Rekapitulasi penggunaan anggaran jika relevan.
+
+### 5. Dokumen evaluasi dan pelaporan
+
+- Laporan bulanan bidang kesiswaan.
+- Laporan semester.
+- Laporan akhir tahun pelajaran.
+- Laporan pelaksanaan program kerja.
+- Laporan realisasi anggaran.
+- Laporan kegiatan OSIS.
+- Laporan kegiatan ekstrakurikuler.
+- Laporan prestasi peserta didik.
+- Laporan kedisiplinan secara agregat.
+- Laporan pembinaan karakter.
+- Laporan monitoring dan evaluasi.
+- Rekomendasi perbaikan program.
+- Rencana tindak lanjut.
+
+Setiap kategori harus memiliki daftar dokumen, templat, status penyusunan, tanggal, penanggung jawab, relasi ke kegiatan, serta riwayat revisi.
+
+## G. MODUL MPLS
+
+Buat modul khusus Masa Pengenalan Lingkungan Satuan Pendidikan (MPLS) sesuai nomenklatur dan ketentuan yang berlaku pada tahun pelaksanaan.
+
+Fitur yang disediakan:
+
+1. Perencanaan MPLS.
+2. Pembentukan panitia.
+3. Penyusunan SK panitia.
+4. Penyusunan program dan proposal.
+5. Jadwal kegiatan harian.
+6. Daftar pemateri dan pendamping.
+7. Daftar peserta didik baru.
+8. Daftar hadir.
+9. Materi pengenalan sekolah.
+10. Materi budaya sekolah yang aman dan nyaman.
+11. Materi karakter, kedisiplinan, dan tata tertib.
+12. Materi pencegahan perundungan dan kekerasan.
+13. Instrumen evaluasi kegiatan.
+14. Dokumentasi kegiatan.
+15. Laporan akhir MPLS.
+16. Rekapitulasi evaluasi dan tindak lanjut.
+
+Sediakan templat yang dapat disesuaikan dengan kebijakan MPLS terbaru. Jangan memasukkan kegiatan yang dilarang atau menganggap ketentuan tahun sebelumnya otomatis berlaku pada tahun berjalan.
+
+## H. MODUL OSIS DAN ORGANISASI PESERTA DIDIK
+
+Buat pengelolaan OSIS dari awal hingga akhir masa kepengurusan.
+
+Fitur:
+- Data pengurus OSIS.
+- Data pembina OSIS.
+- Struktur organisasi.
+- Masa jabatan.
+- Program kerja OSIS.
+- Kalender kegiatan OSIS.
+- Rapat kerja.
+- Notulen rapat.
+- Daftar hadir.
+- Proposal kegiatan.
+- Surat tugas dan undangan.
+- Laporan kegiatan.
+- Laporan pertanggungjawaban.
+- Evaluasi program kerja.
+- Dokumentasi dan arsip.
+- Pemilihan ketua OSIS.
+- Administrasi calon ketua OSIS.
+- Visi, misi, dan program calon.
+- Jadwal kampanye dan debat.
+- Rekapitulasi hasil pemilihan.
+- Serah terima kepengurusan.
+
+Tambahkan fitur regenerasi kepengurusan dan penyalinan program OSIS dari tahun sebelumnya tanpa menghapus arsip lama.
+
+## I. MODUL EKSTRAKURIKULER
+
+Sediakan pengelolaan kegiatan ekstrakurikuler yang tersedia di SMA Negeri 1 Kakas.
+
+Setiap kegiatan ekstrakurikuler memiliki:
+- Nama kegiatan.
+- Pembina.
+- Jadwal.
+- Peserta.
+- Daftar hadir.
+- Program semester.
+- Target kegiatan.
+- Agenda latihan.
+- Prestasi.
+- Dokumentasi.
+- Evaluasi.
+- Laporan semester dan tahunan.
+
+Sediakan pengelolaan kegiatan olahraga, seni, akademik, kepramukaan, organisasi, dan ekstrakurikuler lainnya sesuai kegiatan yang benar-benar tersedia di sekolah.
+
+Nama dan jumlah ekstrakurikuler harus berasal dari data yang diinput pengguna, bukan daftar yang dianggap otomatis aktif.
+
+## J. MODUL KEDISIPLINAN, KARAKTER, DAN BUDAYA SEKOLAH
+
+Buat modul administrasi pembinaan peserta didik yang berorientasi pada pembinaan positif, pencegahan, pendampingan, dan perbaikan perilaku.
+
+Fitur:
+- Administrasi tata tertib sekolah.
+- Program pembinaan kedisiplinan.
+- Pencatatan pembinaan sesuai kewenangan.
+- Rekapitulasi data kedisiplinan.
+- Program budaya positif.
+- Pembiasaan 7 Kebiasaan Anak Indonesia Hebat.
+- Program penguatan karakter dan nilai-nilai Pancasila.
+- Program pencegahan perundungan.
+- Program sekolah aman dan nyaman.
+- Program kepemimpinan dan tanggung jawab.
+- Program kepedulian sosial dan lingkungan.
+- Catatan tindak lanjut pembinaan.
+- Laporan evaluasi program.
+
+Laporan untuk pihak yang tidak berwenang harus menggunakan data agregat atau data yang telah dianonimkan.
+
+Batasi akses terhadap catatan individual peserta didik. Jangan membuat papan peringkat pelanggaran, mempermalukan peserta didik, atau menyebarkan catatan sensitif.
+
+## K. MODUL PRESTASI DAN KEIKUTSERTAAN LOMBA
+
+Sediakan basis data prestasi peserta didik meliputi:
+
+- Nama peserta didik dan identitas internal yang diperlukan.
+- Kelas dan rombongan belajar.
+- Nama lomba.
+- Bidang lomba.
+- Tingkat sekolah, kecamatan, kabupaten, provinsi, nasional, atau internasional.
+- Penyelenggara.
+- Tanggal dan tempat.
+- Nama pembimbing.
+- Hasil atau peringkat.
+- Bukti sertifikat.
+- Dokumentasi.
+- Surat tugas atau surat rekomendasi.
+- Laporan keikutsertaan.
+- Rekapitulasi prestasi per semester dan tahun pelajaran.
+
+Sediakan laporan prestasi berdasarkan jenis lomba, tingkat kompetisi, peserta didik, dan periode.
+
+## L. MODUL KEGIATAN KHUSUS DAN PERINGATAN HARI BESAR
+
+Buat pengelolaan kegiatan seperti:
+- Upacara bendera.
+- Peringatan hari besar nasional.
+- Peringatan hari besar keagamaan sesuai kalender dan kebutuhan sekolah.
+- Kegiatan kebangsaan.
+- Kegiatan sosial dan kemanusiaan.
+- Bakti lingkungan.
+- Kegiatan literasi dan kreativitas.
+- Pameran karya dan pentas seni.
+- Kegiatan olahraga.
+- Kegiatan pengembangan kepemimpinan.
+- Kegiatan lain yang ditetapkan sekolah.
+
+Setiap kegiatan memiliki kalender, proposal, panitia, surat menyurat, jadwal, daftar hadir, dokumentasi, laporan, evaluasi, dan arsip.
+
+## M. MODUL TATA TERTIB DAN LAYANAN PESERTA DIDIK
+
+Sediakan administrasi untuk:
+- Sosialisasi tata tertib.
+- Rekapitulasi pelaksanaan tata tertib.
+- Pembinaan peserta didik.
+- Komunikasi dengan orang tua/wali.
+- Rekapitulasi keterlibatan peserta didik dalam kegiatan.
+- Koordinasi dengan wali kelas, guru BK, dan kepala sekolah.
+- Rujukan kepada pihak yang berwenang sesuai prosedur sekolah.
+- Dokumentasi tindak lanjut.
+
+Untuk kasus perundungan, kekerasan, perlindungan anak, atau masalah sensitif, aplikasi hanya membantu administrasi terbatas dengan kontrol akses ketat. Jangan membuat keputusan otomatis tentang kesalahan, sanksi, diagnosis, atau tindakan disipliner.
+
+## N. MODUL KALENDER DAN AGENDA KESISWAAN
+
+Buat kalender interaktif yang menampilkan:
+- Agenda harian, mingguan, bulanan, dan tahunan.
+- Tanggal kegiatan.
+- Penanggung jawab.
+- Lokasi.
+- Status persiapan.
+- Dokumen yang diperlukan.
+- Tenggat laporan.
+- Benturan jadwal.
+- Pengingat kegiatan.
+
+Pengguna dapat menambahkan, mengubah, dan membatalkan agenda dengan konfirmasi. Sediakan tampilan kalender dan daftar agenda.
+
+## O. MODUL GENERATOR DOKUMEN BERBASIS AI
+
+Buat generator dokumen yang memungkinkan pengguna memilih:
+
+1. Jenis dokumen.
+2. Tahun pelajaran.
+3. Semester.
+4. Program atau kegiatan.
+5. Tujuan dokumen.
+6. Nama penanggung jawab.
+7. Tanggal dan tempat.
+8. Peserta atau sasaran.
+9. Dasar hukum.
+10. Jadwal.
+11. Anggaran jika relevan.
+12. Hasil yang diharapkan.
+13. Informasi tambahan.
+
+AI kemudian menghasilkan draf dokumen formal dalam Bahasa Indonesia yang baik, baku, jelas, dan sesuai tata naskah administrasi pendidikan.
+
+Ketentuan generator:
+- Gunakan format resmi dan konsisten.
+- Berikan nomor dokumen sesuai pola yang dikonfigurasi.
+- Gunakan identitas sekolah yang tersimpan.
+- Gunakan format tanggal Indonesia.
+- Sediakan bagian pengesahan.
+- Sediakan tempat tanda tangan.
+- Bedakan pembuat, pemeriksa, dan pejabat yang mengesahkan.
+- Tandai informasi yang masih kosong dengan placeholder yang jelas.
+- Jangan mengarang dasar hukum, nomor surat, nama pejabat, NIP, data peserta, atau nilai anggaran.
+- Minta pengguna memeriksa dan mengesahkan draf sebelum digunakan secara resmi.
+- Sediakan fitur edit sebelum dokumen disimpan.
+- Sediakan pratinjau dokumen sebelum dicetak.
+
+Buat generator khusus untuk SK, surat undangan, surat tugas, proposal, jadwal, daftar hadir, notulen, berita acara, laporan kegiatan, laporan semester, laporan tahunan, dan dokumen lain yang dapat ditambahkan pengguna.
+
+## P. MODUL ARSIP DIGITAL DAN PENCARIAN
+
+Semua dokumen harus tersimpan dalam sistem arsip yang terstruktur.
+
+Kategori arsip:
+- Tahun pelajaran.
+- Semester.
+- Jenis dokumen.
+- Bidang program.
+- Nama kegiatan.
+- Nomor dokumen.
+- Tanggal dokumen.
+- Penanggung jawab.
+- Status dokumen.
+
+Fitur:
+- Pencarian berdasarkan judul, kata kunci, nomor, tahun, dan kategori.
+- Filter dokumen.
+- Unggah dokumen PDF, DOCX, XLSX, dan gambar yang didukung.
+- Penyimpanan file asli.
+- Pratinjau jika format didukung.
+- Unduh dokumen.
+- Penggantian versi dengan riwayat revisi.
+- Penandaan dokumen penting.
+- Pengarsipan.
+- Penghapusan dengan konfirmasi dan kontrol hak akses.
+
+Dokumen yang dihasilkan aplikasi harus dapat disimpan kembali dan ditemukan melalui pencarian.
+
+## Q. MODUL LAPORAN OTOMATIS
+
+Buat laporan yang dapat dihasilkan berdasarkan data program dan kegiatan.
+
+Jenis laporan:
+1. Laporan bulanan kesiswaan.
+2. Laporan semester ganjil.
+3. Laporan semester genap.
+4. Laporan akhir tahun pelajaran.
+5. Laporan realisasi program kerja.
+6. Laporan realisasi kegiatan.
+7. Laporan OSIS.
+8. Laporan ekstrakurikuler.
+9. Laporan prestasi peserta didik.
+10. Laporan kegiatan MPLS.
+11. Laporan pembinaan karakter.
+12. Laporan monitoring dan evaluasi.
+13. Laporan inventarisasi dokumen.
+14. Laporan program yang belum terlaksana.
+15. Laporan tindak lanjut.
+16. Laporan ringkas untuk kepala sekolah.
+
+Laporan otomatis harus menggunakan data yang benar-benar tersimpan dalam aplikasi. Bedakan dengan jelas antara data yang sudah lengkap, data yang belum tersedia, dan hasil evaluasi yang perlu diisi pengguna.
+
+Sediakan tabel rencana versus realisasi, persentase pencapaian berdasarkan indikator yang terdefinisi, kendala, rekomendasi, dan tindak lanjut.
+
+## R. FITUR EKSPOR DAN PENCETAKAN
+
+Sediakan fasilitas:
+
+- Ekspor dokumen ke DOCX.
+- Ekspor laporan ke PDF.
+- Ekspor tabel ke XLSX dan CSV.
+- Pencetakan melalui browser.
+- Unduh berkas asli.
+- Pratinjau halaman sebelum dicetak.
+- Penomoran halaman untuk dokumen panjang.
+- Header dan footer yang dapat dikonfigurasi.
+- Logo sekolah pada dokumen yang memerlukannya.
+- Format kertas A4 secara default.
+- Margin dokumen formal yang dapat disesuaikan.
+- Daftar isi dan tabel yang tertata untuk laporan panjang.
+
+Jangan sekadar mengganti ekstensi file. Gunakan mekanisme ekspor yang menghasilkan berkas valid dan dapat dibuka oleh aplikasi yang sesuai.
+
+Jika suatu format ekspor belum didukung, tampilkan penjelasan yang jujur dan sediakan alternatif yang berfungsi.
+
+## S. PENGELOLAAN ANGGARAN KEGIATAN
+
+Sediakan modul sederhana untuk:
+- Rencana anggaran biaya.
+- Komponen pengeluaran.
+- Volume.
+- Satuan.
+- Harga satuan.
+- Jumlah.
+- Sumber dana.
+- Realisasi.
+- Selisih.
+- Bukti transaksi.
+- Rekapitulasi anggaran kegiatan.
+
+Perhitungan jumlah harus dilakukan otomatis berdasarkan volume dan harga satuan.
+
+Modul ini berfungsi sebagai administrasi dan pemantauan. Penggunaan anggaran tetap mengikuti kewenangan, prosedur keuangan, serta ketentuan sekolah yang berlaku.
+
+## T. MANAJEMEN PENGGUNA DAN KEAMANAN
+
+Sediakan peran pengguna:
+
+1. Administrator aplikasi.
+2. Wakil Kepala Sekolah Bidang Kesiswaan.
+3. Kepala Sekolah.
+4. Staf administrasi kesiswaan.
+5. Pembina OSIS atau ekstrakurikuler dengan akses terbatas.
+6. Pengguna pembaca laporan sesuai penugasan.
+
+Atur hak akses berdasarkan peran.
+
+Ketentuan keamanan:
+- Autentikasi pengguna.
+- Validasi input.
+- Pembatasan akses dokumen.
+- Konfirmasi sebelum penghapusan.
+- Pencatatan aktivitas penting.
+- Pengelolaan sesi pengguna.
+- Backup dan pemulihan data.
+- Perlindungan data pribadi peserta didik.
+- Pembatasan akses terhadap dokumen sensitif.
+- Tidak menampilkan API key di kode frontend.
+- Tidak menyimpan kata sandi dalam bentuk teks biasa.
+- Tidak mengandalkan penyimpanan lokal browser sebagai satu-satunya tempat menyimpan data penting.
+
+Sediakan kebijakan penyimpanan dan penghapusan data sesuai aturan perlindungan data pribadi dan kebijakan sekolah.
+
+## U. DESAIN ANTARMUKA
+
+Gunakan desain aplikasi administrasi pendidikan yang modern, formal, bersih, dan mudah digunakan.
+
+Ketentuan desain:
+- Warna utama biru tua, putih, dan aksen emas atau warna netral.
+- Sidebar navigasi di sisi kiri.
+- Header dengan nama sekolah dan tahun pelajaran aktif.
+- Dashboard dengan kartu statistik.
+- Tabel administrasi yang mudah dibaca.
+- Formulir dengan label yang jelas.
+- Tombol aksi konsisten.
+- Notifikasi berhasil atau gagal.
+- Dialog konfirmasi untuk aksi penting.
+- Pencarian cepat.
+- Filter dan pengurutan tabel.
+- Tampilan responsif untuk komputer, tablet, dan ponsel.
+- Dukungan Bahasa Indonesia.
+- Tanggal dan angka menggunakan format Indonesia.
+- Logo sekolah dapat diunggah oleh administrator.
+
+Menu utama yang harus tersedia:
+1. Dashboard.
+2. Tahun Pelajaran.
+3. Program Kerja.
+4. Kalender Kesiswaan.
+5. Dokumen dan Surat.
+6. MPLS.
+7. OSIS.
+8. Ekstrakurikuler.
+9. Kedisiplinan dan Karakter.
+10. Prestasi Peserta Didik.
+11. Kegiatan Sekolah.
+12. Anggaran Kegiatan.
+13. Laporan.
+14. Arsip Digital.
+15. Pengguna dan Hak Akses.
+16. Pengaturan.
+
+## V. TEKNOLOGI DAN ARSITEKTUR APLIKASI
+
+Gunakan teknologi web modern yang kompatibel dengan lingkungan pembuatan aplikasi Google AI Studio.
+
+Pilih stack yang sesuai, misalnya:
+- React dan TypeScript untuk antarmuka.
+- Komponen UI yang konsisten.
+- Backend dan database persisten untuk data administrasi.
+- Firebase Authentication untuk autentikasi jika sesuai.
+- Cloud Firestore atau database lain yang sesuai untuk data terstruktur.
+- Firebase Storage atau penyimpanan file yang sesuai untuk dokumen.
+- Gemini API untuk pembuatan draf dokumen berbasis AI.
+- Pustaka ekspor dokumen yang sesuai untuk DOCX, PDF, XLSX, dan CSV.
+
+Sesuaikan implementasi dengan kemampuan dan integrasi yang tersedia pada lingkungan saat aplikasi dibuat. Jangan mengasumsikan layanan sudah terhubung atau sudah memiliki konfigurasi.
+
+Persyaratan arsitektur:
+- Pisahkan komponen UI, logika bisnis, dan akses data.
+- Buat struktur data yang konsisten.
+- Gunakan ID unik untuk setiap data.
+- Hubungkan dokumen dengan program dan kegiatan terkait.
+- Terapkan validasi data.
+- Gunakan penanganan kesalahan yang informatif.
+- Sediakan loading state dan empty state.
+- Pastikan seluruh tombol dan formulir memiliki fungsi nyata.
+- Simpan konfigurasi rahasia di lingkungan server atau secret manager.
+- Sediakan panduan konfigurasi layanan eksternal.
+- Sediakan data contoh yang diberi label DEMO dan dapat dihapus.
+- Jangan mencampur data demo dengan data administrasi resmi.
+
+Apabila integrasi backend belum dikonfigurasi, tampilkan status dengan jelas dan sediakan mode demonstrasi yang terpisah. Jangan mengklaim data sudah tersimpan permanen apabila sebenarnya hanya tersimpan sementara.
+
+## W. STRUKTUR DATA
+
+Rancang model data yang mencakup entitas berikut:
+
+1. SchoolProfile
+2. AcademicYears
+3. Semesters
+4. Users
+5. Roles
+6. WorkPrograms
+7. ProgramIndicators
+8. Activities
+9. ActivityCommittees
+10. Documents
+11. DocumentTemplates
+12. DocumentVersions
+13. Correspondence
+14. StudentOrganizations
+15. StudentOrganizationMembers
+16. Extracurriculars
+17. StudentParticipation
+18. StudentAchievements
+19. AttendanceRecords
+20. ActivityBudgets
+21. BudgetRealizations
+22. Evaluations
+23. FollowUps
+24. DigitalArchives
+25. AuditLogs
+
+Setiap entitas harus memiliki ID unik, waktu pembuatan, waktu perubahan, dan relasi yang sesuai.
+
+Dokumen harus memiliki status, minimal:
+- Draf.
+- Dalam pemeriksaan.
+- Perlu revisi.
+- Disetujui.
+- Ditandatangani atau disahkan.
+- Diarsipkan.
+
+Status tersebut hanya menunjukkan proses administrasi internal. Aplikasi tidak boleh menganggap dokumen telah sah secara hukum hanya karena statusnya berubah menjadi disetujui.
+
+## X. ALUR KERJA UTAMA
+
+Implementasikan alur kerja berikut:
+
+### Alur 1: Memulai tahun pelajaran baru
+Pengguna membuat tahun pelajaran, mengaktifkan semester, menyalin templat program, memeriksa agenda, menyesuaikan target, dan menetapkan penanggung jawab.
+
+### Alur 2: Membuat program kerja
+Pengguna mengisi kondisi awal, tujuan, sasaran, kegiatan, indikator, jadwal, anggaran, dan penanggung jawab. AI membantu menyusun draf, lalu pengguna mengedit dan menyimpan.
+
+### Alur 3: Menyelenggarakan kegiatan
+Pengguna membuat kegiatan, menentukan panitia, membuat SK, menyusun proposal, mengelola undangan dan daftar hadir, mengunggah dokumentasi, kemudian membuat laporan kegiatan.
+
+### Alur 4: Membuat dokumen resmi
+Pengguna memilih jenis dokumen, mengisi data, menghasilkan draf, memeriksa isi, merevisi, mencetak atau mengekspor, lalu mengarsipkan dokumen.
+
+### Alur 5: Evaluasi semester
+Sistem merangkum kegiatan yang telah dilaksanakan, target yang tercapai, program yang belum terlaksana, kendala, dan tindak lanjut berdasarkan data yang tersedia.
+
+### Alur 6: Menutup tahun pelajaran
+Pengguna menghasilkan laporan tahunan, memeriksa kelengkapan arsip, menyelesaikan laporan yang tertunda, kemudian mengarsipkan tahun pelajaran tanpa menghapus data historis.
+
+## Y. VALIDASI DAN KUALITAS DOKUMEN
+
+Semua dokumen harus:
+- Menggunakan Bahasa Indonesia baku.
+- Memiliki struktur sesuai jenis dokumen.
+- Konsisten dalam penulisan nama sekolah.
+- Menggunakan format tanggal yang konsisten.
+- Memiliki penomoran yang dapat dikonfigurasi.
+- Menampilkan placeholder untuk data yang belum tersedia.
+- Tidak memuat data rekaan yang disajikan sebagai fakta.
+- Memiliki pratinjau sebelum ekspor.
+- Memungkinkan koreksi manual.
+- Memiliki relasi dengan kegiatan dan tahun pelajaran yang tepat.
+
+Untuk dasar hukum, gunakan sumber resmi dan versi peraturan yang berlaku pada waktu dokumen dibuat. Jika aplikasi tidak memiliki akses untuk memverifikasi peraturan terbaru, minta pengguna memasukkan atau memeriksa dasar hukum sebelum dokumen digunakan.
+
+## Z. KRITERIA KEBERHASILAN
+
+Aplikasi dinyatakan memenuhi kebutuhan apabila:
+
+1. Semua menu utama dapat dibuka dan digunakan.
+2. Data dapat ditambah, dilihat, diubah, dan dihapus sesuai hak akses.
+3. Data tersimpan secara persisten setelah aplikasi dimuat ulang apabila backend telah dikonfigurasi.
+4. Tahun pelajaran baru tidak menghapus data tahun sebelumnya.
+5. Dokumen dapat dibuat, diedit, disimpan, dicari, dan diarsipkan.
+6. Generator dokumen menggunakan data sekolah yang tersimpan.
+7. Laporan dihasilkan dari data aktual.
+8. Ekspor menghasilkan file yang valid.
+9. Fitur pencarian dan filter bekerja.
+10. Dashboard menampilkan data yang konsisten.
+11. Hak akses dan perlindungan data diterapkan.
+12. Antarmuka berjalan pada komputer dan perangkat seluler.
+13. Tidak ada tombol penting yang hanya bersifat dekoratif.
+14. Kesalahan ditampilkan dengan pesan yang jelas.
+15. Tersedia panduan penggunaan dan konfigurasi.
+
+## AA. INSTRUKSI IMPLEMENTASI KEPADA AI
+
+Mulailah dengan merancang arsitektur aplikasi dan struktur data, kemudian implementasikan aplikasi secara bertahap.
+
+Prioritaskan urutan berikut:
+
+Tahap 1: Kerangka aplikasi, desain antarmuka, navigasi, dashboard, profil sekolah, dan tahun pelajaran.
+
+Tahap 2: Database, autentikasi, hak akses, program kerja, dan kalender kegiatan.
+
+Tahap 3: Generator dokumen, templat surat, SK, proposal, daftar hadir, dan laporan.
+
+Tahap 4: Modul MPLS, OSIS, ekstrakurikuler, prestasi, pembinaan karakter, dan kegiatan sekolah.
+
+Tahap 5: Arsip digital, ekspor file, evaluasi, dan laporan otomatis.
+
+Tahap 6: Pengujian, perbaikan bug, validasi keamanan, serta dokumentasi penggunaan.
+
+Jangan berhenti pada perencanaan atau memberikan contoh kode yang terpisah-pisah tanpa membangun aplikasi. Implementasikan fitur yang memungkinkan dalam proyek aktif, pastikan aplikasi dapat dijalankan, dan perbaiki kesalahan yang ditemukan.
+
+Jika ruang lingkup terlalu besar untuk satu kali implementasi, selesaikan satu tahap secara utuh, pertahankan struktur kode, lalu lanjutkan tahap berikutnya tanpa merusak fitur yang sudah berfungsi.
+
+Hasil akhir yang saya inginkan adalah aplikasi administrasi kesiswaan yang profesional, mudah digunakan, terstruktur, aman, dapat dikembangkan, dan menjadi pusat administrasi Wakil Kepala Sekolah Bidang Kesiswaan SMA Negeri 1 Kakas untuk setiap tahun pelajaran.
+
+Mulai bangun aplikasi sekarang. Jangan hanya memberikan penjelasan atau rancangan; hasilkan implementasi aplikasi yang dapat dijalankan beserta petunjuk konfigurasi dan pengujiannya.
